@@ -11,8 +11,6 @@ export const useRedirect = () => {
     const hasMissingProps = !role || !rule;
     const shouldRedirect = rule?.only && rule.only.indexOf(role) < 0;
 
-    console.log(shouldRedirect, 'shouldRedirect')
-
     if (hasMissingProps || shouldRedirect) {
         return {redirect: "/"};
     }
