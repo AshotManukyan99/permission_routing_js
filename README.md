@@ -1,2 +1,0 @@
-# useRedirect
-Created with CodeSandbox
