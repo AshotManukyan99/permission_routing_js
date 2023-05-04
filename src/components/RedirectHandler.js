@@ -1,9 +1,9 @@
 import React from "react";
 import {Redirect, useLocation} from "react-router-dom";
-import {useRedirect} from "../hooks/useRedirect";
+import {usePermissionRedirect} from "../hooks/usePermissionRedirect";
 
 export const RedirectHandler = ({children}) => {
-    const {redirect} = useRedirect();
+    const {redirect} = usePermissionRedirect();
     const {pathname} = useLocation();
 
     if (redirect) {

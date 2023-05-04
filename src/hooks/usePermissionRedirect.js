@@ -2,7 +2,7 @@ import {useLocation, matchPath} from "react-router-dom";
 import {useRoleContext} from "../context/RoleContext";
 import {RedirectRules} from "../utils/redirectRules";
 
-export const useRedirect = () => {
+export const usePermissionRedirect = () => {
     const {role} = useRoleContext();
     const {pathname} = useLocation();
 
